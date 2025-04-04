@@ -103,5 +103,5 @@ For more information on using the Angular CLI, including detailed command refere
 8. Conclusion
    > 8.1 Conclusion
 
-=> How to upgrade Angular?
+=> How to upgrade Angular version?
 -> ng update @angular/core @angular/cli
