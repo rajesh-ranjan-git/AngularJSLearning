@@ -105,3 +105,58 @@ For more information on using the Angular CLI, including detailed command refere
 
 => How to upgrade Angular version?
 -> ng update @angular/core @angular/cli
+
+## Current tutorial index
+
+00:00 Introduction
+01:31 Understanding Frameworks
+06:21 The Angular CLI
+10:51 Upgrading Angular
+13:12 Creating A New Application
+16:53 Starting The Server
+22:09 Reviewing the Configuration Files
+30:27 Main Entry File
+32:03 AOT Compilation
+37:15 Bootstrapping Angular
+42:50 Understanding Components
+45:02 Creating Components
+50:58 EXT Templates and Styles
+57:15 Everything Else
+59:17 Introduction to TypeScript
+1:04:37 Installing Typescript
+1:08:33 Type Annotations
+1:13:33 Variables
+1:18:23 Union Types
+1:21:48 Arrays
+1:24:59 Objects
+1:28:38 Interfaces
+1:32:33 Classes
+1:36:15 Generics
+1:44:09 Why Decorators
+1:49:00 TypeScript Configuration
+1:51:59 Writing Decorators
+2:00:20 Signals
+2:10:35 Property Binding
+2:14:56 Event Binding
+2:22:11 Type Assertions
+2:27:54 Creating a Component
+2:32:46 Custom Properties
+2:41:02 Required Inputs
+2:43:40 Emitting Events
+2:52:33 Content Projection
+2:55:58 Lifecycle Hooks
+3:03:11 More Lifecycle Hooks
+3:14:07 Scoped CSS
+3:18:35 Understanding Pipes
+3:20:54 Pipe Basics
+3:26:02 Angular Dev Tools
+3:28:41 Pipe Parameters
+3:35:51 Dealing with Numbers
+3:44:00 Debugging with Pipes
+3:46:38 Understanding Directives
+3:48:14 The NgClass Directive
+3:55:05 The Ng Style Directive
+3:59:30 If Block
+4:01:54 For Block
+4:08:04 Introduction to Master Project
+4:12:52 Next Steps
