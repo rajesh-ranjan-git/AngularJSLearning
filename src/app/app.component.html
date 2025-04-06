@@ -1,5 +1,9 @@
-<main
-  class="flex justify-center items-center font-semibold text-red-400 text-5xl"
->
-  Angular JS Learning
+<main class="flex flex-col justify-center items-center">
+  <p class="font-semibold text-red-400 text-4xl">{{ title }} Learning</p>
+  <p class="p-4 font-semibold text-green-400 text-2xl">
+    {{ name().toUpperCase() }} is learning here
+  </p>
+  <p class="p-4 font-semibold text-blue-400 text-md">
+    {{ getName() }} has recently secured a job at India Today.
+  </p>
 </main>
