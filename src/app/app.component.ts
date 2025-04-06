@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
+import { PostComponent } from './post/post.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  imports: [PostComponent],
 })
 export class AppComponent {
   title = 'Angular JS';

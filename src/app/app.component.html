@@ -13,11 +13,5 @@
     [value]="imageURL()"
     class="p-2 border border-slate-400 rounded"
   />
-  <div class="p-5">
-    <img
-      [src]="imageURL()"
-      alt="angular"
-      class="shadow-md rounded-2xl max-w-80 max-h-80 hover:scale-105 transition-all ease-in-out"
-    />
-  </div>
+  <app-post [postImage]="imageURL()"></app-post>
 </main>
