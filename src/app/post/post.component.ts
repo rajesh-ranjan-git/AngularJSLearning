@@ -4,6 +4,7 @@ import { Component, input, output } from '@angular/core';
   selector: 'app-post',
   imports: [],
   templateUrl: './post.component.html',
+  styleUrls: ['./post.component.css'],
   standalone: true,
 })
 export class PostComponent {
