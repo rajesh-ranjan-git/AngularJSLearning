@@ -25,5 +25,15 @@
   <p>{{ cost() | currency : "INR" }}</p>
   <p>{{ temperature() | number : "1.2-4" }}</p>
   <p>{{ pizza() | json }}</p>
-  <p></p>
+
+  <div class="p-2">
+    <button
+      class="bg-red-500 p-2 rounded-md text-white cursor-pointer"
+      (click)="blueButton.set(!blueButton())"
+      [ngClass]="{ blueButton: blueButton() }"
+      [ngStyle]="{ 'font-size.px': fontSizeButton() }"
+    >
+      Click Me!
+    </button>
+  </div>
 </main>

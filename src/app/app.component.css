@@ -3,3 +3,8 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+.blueButton {
+  background-color: blue;
+  color: white;
+}

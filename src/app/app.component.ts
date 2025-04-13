@@ -1,25 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { PostComponent } from './post/post.component';
-import {
-  CurrencyPipe,
-  DatePipe,
-  DecimalPipe,
-  JsonPipe,
-  TitleCasePipe,
-} from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [
-    PostComponent,
-    TitleCasePipe,
-    DatePipe,
-    CurrencyPipe,
-    DecimalPipe,
-    JsonPipe,
-  ],
+  imports: [PostComponent, CommonModule],
   standalone: true,
 })
 export class AppComponent {
@@ -34,6 +21,9 @@ export class AppComponent {
 
   cost = signal(2000);
   temperature = signal(23.434534);
+
+  blueButton = signal(false);
+  fontSizeButton = signal(24);
 
   pizza = signal({
     toppings: ['pepperoni', 'margarita'],
