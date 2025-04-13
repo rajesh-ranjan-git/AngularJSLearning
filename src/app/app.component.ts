@@ -30,6 +30,13 @@ export class AppComponent {
     size: 'large',
   });
 
+  images = signal([
+    'https://picsum.photos/id/337/200/300',
+    'https://picsum.photos/id/437/200/300',
+    'https://picsum.photos/id/537/200/300',
+    'https://picsum.photos/id/637/200/300',
+  ]);
+
   getName() {
     return this.name();
   }

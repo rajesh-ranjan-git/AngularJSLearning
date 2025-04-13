@@ -22,6 +22,12 @@
     <p>Post Image</p>
   </app-post>
 
+  @for (image of images(); track $index) {
+  <app-post [postImage]="image" (imageSelected)="logImage($event)">
+    <p>{{ $index }}</p>
+  </app-post>
+  }
+
   <p>{{ cost() | currency : "INR" }}</p>
   <p>{{ temperature() | number : "1.2-4" }}</p>
   <p>{{ pizza() | json }}</p>
@@ -36,4 +42,8 @@
       Click Me!
     </button>
   </div>
+
+  @if(blueButton()) {
+  <p>Blue button clicked</p>
+  }
 </main>
