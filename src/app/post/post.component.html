@@ -3,5 +3,9 @@
     [src]="postImage()"
     alt="angular"
     class="shadow-md rounded-2xl max-w-80 max-h-80 hover:scale-105 transition-all ease-in-out cursor-pointer"
+    (click)="imageSelected.emit(postImage())"
   />
+
+  <!-- Content Projection -->
+  <ng-content></ng-content>
 </div>

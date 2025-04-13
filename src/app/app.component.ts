@@ -6,6 +6,7 @@ import { PostComponent } from './post/post.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   imports: [PostComponent],
+  standalone: true,
 })
 export class AppComponent {
   title = 'Angular JS';
@@ -21,5 +22,9 @@ export class AppComponent {
 
   changeImage(e: KeyboardEvent) {
     this.imageURL.set((e.target as HTMLInputElement).value);
+  }
+
+  logImage(e: string) {
+    console.log(e);
   }
 }

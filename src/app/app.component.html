@@ -16,5 +16,7 @@
     class="p-2 border border-slate-400 rounded"
   />
 
-  <app-post [postImage]="imageURL()"></app-post>
+  <app-post [postImage]="imageURL()" (imageSelected)="logImage($event)">
+    <p>Post Image</p>
+  </app-post>
 </main>
