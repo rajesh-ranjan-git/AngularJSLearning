@@ -6,5 +6,5 @@ import { Component, input } from '@angular/core';
   templateUrl: './post.component.html',
 })
 export class PostComponent {
-  postImage = input('');
+  postImage = input.required();
 }

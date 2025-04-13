@@ -7,11 +7,14 @@
   <p class="p-4 font-semibold text-blue-400 text-md">
     {{ getName() }} has recently secured a job at India Today.
   </p>
+
+  <!-- event binding by () and property binding by [] -->
   <input
     type="text"
     (keyup)="changeImage($event)"
     [value]="imageURL()"
     class="p-2 border border-slate-400 rounded"
   />
+
   <app-post [postImage]="imageURL()"></app-post>
 </main>
