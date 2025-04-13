@@ -1,8 +1,10 @@
 <main class="flex flex-col justify-center items-center">
   <img src="{{ logoImageURL() }}" alt="angular" class="max-w-40 max-h-40" />
   <p class="font-semibold text-red-400 text-4xl">{{ title }} Learning</p>
+  <p>{{ currentDate() | date : "MMMM dd YYYY" }}</p>
+  <p>{{ currentTime() | date : "hh : mm " }}</p>
   <p class="p-4 font-semibold text-green-400 text-2xl">
-    {{ name().toUpperCase() }} is learning here
+    {{ name().toUpperCase() | titlecase }} is learning here
   </p>
   <p class="p-4 font-semibold text-blue-400 text-md">
     {{ getName() }} has recently secured a job at India Today.
@@ -19,4 +21,9 @@
   <app-post [postImage]="imageURL()" (imageSelected)="logImage($event)">
     <p>Post Image</p>
   </app-post>
+
+  <p>{{ cost() | currency : "INR" }}</p>
+  <p>{{ temperature() | number : "1.2-4" }}</p>
+  <p>{{ pizza() | json }}</p>
+  <p></p>
 </main>
